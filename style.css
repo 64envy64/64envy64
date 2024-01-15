@@ -21,64 +21,8 @@ background: #6361d8;
 .no-resize {
 resize: none !important;
 }
-/* Стили для номера телефона */
-.phone {
-position: fixed;
-top: 65px;
-right: 6.6em;
-display: flex;
-align-items: center;
-z-index: 1501;
-}
-.phone-link {
-display: flex;
-align-items: center;
-color: #9e9e9e; /* Замените на ваш цвет текста */
-text-decoration: none;
-margin-right: 20px; /* Расстояние между номером и переменной языка */
-transition: color 0.5s ease;
-}
-
-.phone-link:hover {
-color: #e4e4e4; /* Замените на ваш цвет при наведении */
-}
-
-.phone .fa-phone-flip {
-margin-right: 10px; /* Расстояние между иконкой телефона и номером */
-font-size: 20px;
-}
 .lang-dropdown-btn .fa-earth-americas {
 display: none;
-}
-/* Дополнительные стили для мобильных устройств */
-@media (max-width: 768px) {
-.phone {
-    margin-right: -50px;
-}
-.phone-number {
-  display: none;
-}
-.lang-dropdown-btn .fa-earth-americas {
-  display: flex;
-  color: #9e9e9e;
-  transition: color 0.5s ease;
-  font-size: 20px;
-}
-.lang-dropdown-btn .fa-earth-americas:hover {
-  display: flex;
-  color: #e4e4e4;
-}
-.lang-dropdown-btn .lang-arrow {
-  display: none;
-}
-.lang-name {
-  display: none;
-}
-}
-@media (max-width: 700px) {
-.lang-dropdown-list {
-  width: 150px; /* Уменьшаем ширину для маленьких экранов */
-}
 }
 @media (max-width: 700px) {
 .logo {
@@ -506,11 +450,11 @@ top: 0;
 left: 0;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around; /* Используем space-around вместо space-between */
 width: 100%;
 height: 72px;
 padding-left: 25px;
-padding-right: 72px;
+padding-right: 25px; /* Уменьшаем правый отступ */
 }
 .navbar-burger {
 z-index: 1501;
@@ -542,6 +486,7 @@ width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.842);
 opacity: 0;
+overflow: hidden;
 visibility: hidden;
 transition: 0.5s;
 }
@@ -607,9 +552,69 @@ animation: appear 0.3s backwards;
   opacity: 1;
 }
 }
+/* Стили для номера телефона */
+.phone {
+position: fixed;
+top: 65px;
+right: 6.6em;
+display: flex;
+align-items: center;
+z-index: 1501;
+}
+.phone-link {
+display: flex;
+align-items: center;
+color: #9e9e9e; /* Замените на ваш цвет текста */
+text-decoration: none;
+margin-right: 20px; /* Расстояние между номером и переменной языка */
+transition: color 0.5s ease;
+}
+
+.phone-link:hover {
+color: #e4e4e4; /* Замените на ваш цвет при наведении */
+}
+
+.phone .fa-phone-flip {
+margin-right: 10px; /* Расстояние между иконкой телефона и номером */
+font-size: 20px;
+}
+.lang-dropdown-btn .fa-earth-americas {
+display: none;
+}
+/* Дополнительные стили для мобильных устройств */
 @media (max-width: 700px) {
 .header {
   min-height: 100vh;
+}
+.phone {
+  right: 5em;
+}
+.phone-number {
+display: none;
+}
+.lang-dropdown {
+right: 3em;
+}
+.lang-dropdown-btn .fa-earth-americas {
+display: flex;
+color: #9e9e9e;
+transition: color 0.5s ease;
+font-size: 20px;
+}
+.lang-dropdown-btn .fa-earth-americas:hover {
+display: flex;
+color: #e4e4e4;
+}
+.lang-dropdown-btn .lang-arrow {
+display: none;
+}
+.lang-name {
+display: none;
+}
+}
+@media (max-width: 700px) {
+.lang-dropdown-list {
+width: 100px; /* Уменьшаем ширину для маленьких экранов */
 }
 }
 .text-box {
@@ -802,21 +807,6 @@ line-height: 22px;
 padding: 10px;
 }
 
-.purple-line {
-position: relative;
-width: 68%;
-height: 10px;
-overflow: hidden;
-}
-.purple-line::before,
-.purple-line::after {
-content: "";
-position: absolute;
-background-color: #9370DB;
-height: 100%;
-width: 100%;
-}
-
 /**course**/
 .course {
   width: 70%;
@@ -882,18 +872,15 @@ transition: .3s ease-in-out;
 
 }
 @media(max-width: 700px){
-.purple-line {
-  background-color: #9370DB;
-  height: 15px;
-  width: 100%;
-  z-index: 0;
-}
   .row{
       flex-direction: column;
   }
   .pluses h1{
       font-size: 25px;
       padding: 10px 0;
+  }
+  .pluses {
+    width: 90%;
   }
   .pluses p{
       font-size: 14px;
