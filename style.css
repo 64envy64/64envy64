@@ -401,7 +401,12 @@ transition: color 0.3s;
 }
 .lang-dropdown-btn:hover .lang-name,
 .lang-dropdown-btn:hover .lang-arrow {
-color: #e4e4e4;
+  color: #e4e4e4;
+}
+.lang-dropdown-btn .lang-name,
+.lang-dropdown-btn .lang-arrow {
+  color: #a0a0a0;
+  transition: color 0.3s;
 }
 .lang-name {
 margin-right: 10px;
