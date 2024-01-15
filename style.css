@@ -1124,12 +1124,12 @@ background: #4443b6;
 }
 
 .wrapper i:first-child {
-left: -5px;
+left: -15px;
 display: none;
 }
 
 .wrapper i:last-child {
-right: -5px;
+right: -15px;
 }
 
 .wrapper .carousel {
@@ -1179,6 +1179,14 @@ margin-left: 0px;
   max-width: 400px;
   padding-top: 50px;
   margin: 0 auto; 
+}
+.wrapper i:first-child {
+  left: 0px;
+  display: none;
+}
+
+.wrapper i:last-child {
+  right: 0px;
 }
 }
 /*---footer---*/
