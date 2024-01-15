@@ -914,7 +914,7 @@ transition: .3s ease-in-out;
 width: 70%;
 margin: auto;
 text-align: center;
-padding-top: 80px;
+padding-top: 84px;
 font-size: 36px;
 font-weight: 600;
 position: relative;
@@ -924,7 +924,7 @@ overflow: hidden; /* Добавлено для обрезки псевдоэле
 .campus::before {
 content: "";
 position: absolute;
-top: 0;
+top: 35px;
 left: 50%;
 transform: translateX(-50%);
 width: 90%;
@@ -1317,11 +1317,11 @@ right: 0px;
     padding: 0px 0px;
   }
   .menu__link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     align-items: center;
   }
   .social-icon__link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     align-items: center;
   }
 }
