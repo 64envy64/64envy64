@@ -1181,12 +1181,12 @@ margin-left: 0px;
   margin: 0 auto; 
 }
 .wrapper i:first-child {
-  left: 0px;
-  display: none;
+left: 0px;
+display: none;
 }
 
 .wrapper i:last-child {
-  right: 0px;
+right: 0px;
 }
 }
 /*---footer---*/
