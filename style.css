@@ -766,6 +766,9 @@ z-index: -1;
 .text-box h1 span {
   font-size: 28px;
 }
+.text-box h1 span::before {
+  display: none; /* Скрываем элемент ::before на мобильных устройствах */
+}
 }
 /*---- pluses ----*/
 
