@@ -401,7 +401,12 @@ transition: color 0.3s;
 }
 .lang-dropdown-btn:hover .lang-name,
 .lang-dropdown-btn:hover .lang-arrow {
-color: #e4e4e4;
+  color: #e4e4e4;
+}
+.lang-dropdown-btn .lang-name,
+.lang-dropdown-btn .lang-arrow {
+  color: #a0a0a0;
+  transition: color 0.3s;
 }
 .lang-name {
 margin-right: 10px;
@@ -713,13 +718,13 @@ line-height: 4rem;
 text-align: center;
 border-radius: 50%;
 color: #fff;
-background: #9982ee;
+background: #6f53ed;
 font-size: 2rem;
 margin: 2rem 0;
 transition: .2s;
 }
 .box-container .box:hover i{
-background: #7d68ca;
+background: #4c35b1;
 }
 .box-container .box h3{
 font-size: 1.5rem;
@@ -816,7 +821,7 @@ overflow: hidden;
 .purple-line::after {
 content: "";
 position: absolute;
-background-color: #9370DB;
+background-color: #8953ed;
 height: 100%;
 width: 100%;
 }
@@ -914,7 +919,7 @@ transition: .3s ease-in-out;
 width: 70%;
 margin: auto;
 text-align: center;
-padding-top: 80px;
+padding-top: 84px;
 font-size: 36px;
 font-weight: 600;
 position: relative;
@@ -924,7 +929,7 @@ overflow: hidden; /* Добавлено для обрезки псевдоэле
 .campus::before {
 content: "";
 position: absolute;
-top: 0;
+top: 35px;
 left: 50%;
 transform: translateX(-50%);
 width: 90%;
@@ -1317,11 +1322,11 @@ right: 0px;
     padding: 0px 0px;
   }
   .menu__link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     align-items: center;
   }
   .social-icon__link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     align-items: center;
   }
 }
