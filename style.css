@@ -3,6 +3,14 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+body{
+  background: #f0f0f0;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
 ::-webkit-scrollbar {
 width: 8px;
 height: 6px;
@@ -74,13 +82,15 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
-body{
-  background: #f0f0f0;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  text-align: center;
-  box-sizing: border-box;
+@media (max-width: 400px) {
+  #back-to-top {
+    width: 35px;
+    height: 35px;
+  }
+  #back-to-top::after {
+    font-size: 1.5em;
+    line-height: 35px;
+  }
 }
 body::before {
 content: '';
@@ -204,7 +214,11 @@ transition: background 0.3s;
 .read-more-btn:hover {
 background-color: #423d91;
 }
-
+@media (max-width: 400px) {
+  .news-item img {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 768px) {
 .news-item {
   width: 100%;
@@ -273,6 +287,17 @@ color: #00000096;
 }
 .question button .d-arrow.rotate{
 transform: rotate(180deg);
+}
+@media (max-width: 400px) {
+  .accordion-text .title {
+    font-size: 32px;
+  }
+  .question span {
+    font-size: 20px;
+    }
+  .question button {
+    padding: 17px 15px;
+  }
 }
 .preloader {
 position: fixed;
@@ -756,7 +781,7 @@ z-index: -1;
 }
 @media (max-width: 400px) {
   .box-container .box {
-    height: 19rem;
+    height: 18rem;
   }
 }
 @media (max-width: 1200px) {
