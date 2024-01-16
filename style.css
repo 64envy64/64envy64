@@ -756,7 +756,7 @@ z-index: -1;
 }
 @media (max-width: 1200px) {
 .box-container {
-  transform: translateY(-20%);
+  transform: translateY(0%);
 }
 .box-container .box{
   margin: 1.5rem;
