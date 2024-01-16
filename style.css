@@ -909,8 +909,8 @@ transition: .3s ease-in-out;
     width: 90%;
   }
   .pluses p{
-      font-size: 14px;
-      padding: 0px 0px 10px;
+      font-size: 12px;
+      padding: 0px 0px 5px;
   }
 }
 
