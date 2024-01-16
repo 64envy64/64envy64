@@ -903,14 +903,14 @@ transition: .3s ease-in-out;
   }
   .pluses h1{
       font-size: 40px;
-      padding: 10px 0;
+      padding: 5px 0;
   }
   .pluses {
     width: 90%;
   }
   .pluses p{
       font-size: 12px;
-      padding: 0px 0px 5px;
+      padding: 0px 0px 10px;
   }
 }
 
