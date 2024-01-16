@@ -88,6 +88,9 @@ display: none;
   max-width: 150px; /* Уменьшаем максимальную ширину для маленьких экранов */
   z-index: 1500;
 }
+.logo-container {
+  max-width: 68px;
+}
 }
 .animated {
 opacity: 0;
@@ -823,12 +826,12 @@ a {
 /* Адаптация для мобильных устройств */
 @media only screen and (max-width: 767px) {
   .text {
-    font-size: 19vw;
+    font-size: 22vw;
     width: 80%;
     left: 10%;
   }
   
-  span {
+  .containerr span {
     font-size: 6vw;
   }
 }
@@ -841,7 +844,7 @@ a {
     left: 15%;
   }
   
-  span {
+  .containerr span {
     font-size: 4vw;
   }
 }
