@@ -84,12 +84,12 @@ visibility: visible;
 }
 @media (max-width: 400px) {
   #back-to-top {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
   #back-to-top::after {
-    font-size: 1.5em;
-    line-height: 35px;
+    font-size: 1.8em;
+    line-height: 45px;
   }
 }
 body::before {
