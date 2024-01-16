@@ -826,7 +826,7 @@ a {
 /* Адаптация для мобильных устройств */
 @media only screen and (max-width: 767px) {
   .text {
-    font-size: 22vw;
+    font-size: 26vw;
     width: 80%;
     left: 10%;
   }
