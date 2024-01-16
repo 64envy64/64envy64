@@ -754,6 +754,11 @@ width: 100%;
 border-radius: 50%;
 z-index: -1;
 }
+@media (max-width: 400px) {
+  .box-container .box {
+    height: 19rem;
+  }
+}
 @media (max-width: 1200px) {
 .box-container {
   transform: translateY(0%);
@@ -1027,26 +1032,99 @@ opacity: 1;
 .cta {
   margin: 100px auto;
   width: 90%;
-  background-image: linear-gradient(rgba(2, 4, 14, 0.418),rgba(2, 4, 14, 0.418)), url(images/background.png);
-  background-position: center;
-  background-size: cover;
+  position: relative;
   border-radius: 10px;
   text-align: center;
   padding: 100px 0;
+  overflow: hidden;
 }
-.cta h1{
-  font-weight: 600;
+
+.background-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cta h1 {
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
+  font-weight: 600;
 }
-@media(max-width: 1000px){
-  .cta h1{
-      font-size: 20px;
-      padding: 5px 5px;
+
+.cta .hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fcfcfc;
+  border: 1px solid #ffffff0e;
+  border-radius: 5px;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.cta .hero-btn:hover {
+  background: #524FD5;
+}
+
+.cta .hero-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #524FD5;
+  z-index: -1;
+  transition: 0.7s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.cta .hero-btn:hover::before {
+  height: 180%;
+}
+
+@media (max-width: 1200px) {
+  .background-img {
+    max-width: 100%;
+    height: auto;
   }
+}
+
+@media (max-width: 1000px) {
   .cta {
-    width: 95%;
+    padding: 60px 0;
+  }
+
+  .cta h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .cta h1 {
+    font-size: 4vw;
+  }
+  .hero-btn {
+    font-size: 2vw;
+    padding: 5px 15px;
+  }
+}
+@media (max-width: 700px) {
+  .cta {
+    padding: 30px 10px;
   }
 }
 
