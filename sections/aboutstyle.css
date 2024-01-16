@@ -270,8 +270,8 @@ opacity: 0;
 }
 
 .preloader {
-    align-items: flex-start; /* Align to the start on mobile */
-    text-align: left; /* Align text to the left on mobile */
+    align-items: center; /* Align to the start on mobile */
+    text-align: center; /* Align text to the left on mobile */
 }
 }
 .sub-header {
