@@ -374,7 +374,7 @@ opacity: 0;
 }
 
 .header {
-min-height: 100vh;
+min-height: 85vh;
 width: 100%;
 position: relative;
 overflow: hidden;
