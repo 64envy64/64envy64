@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // scrollReveal.js
 document.addEventListener('DOMContentLoaded', function () {
   ScrollReveal().reveal('.about-header h1', { delay: 800, origin: 'top', distance: '20px', duration: 800 });
-  ScrollReveal().reveal('.num-header h1', { delay: 700, origin: 'top', distance: '20px', duration: 800 });
+  ScrollReveal().reveal('.num-header h1', { delay: 450, origin: 'top', distance: '20px', duration: 800 });
   ScrollReveal().reveal('#firstset', { delay: 300, origin: 'left', distance: '200px', duration: 800 });
   ScrollReveal().reveal('#secondset', { delay: 300, origin: 'top', distance: '20px', duration: 800 });
   ScrollReveal().reveal('#thirdset', { delay: 350, origin: 'right', distance: '200px', duration: 800 });
