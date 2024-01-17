@@ -88,9 +88,6 @@ display: none;
   max-width: 150px; /* Уменьшаем максимальную ширину для маленьких экранов */
   z-index: 1500;
 }
-.logo-container {
-  max-width: 68px;
-}
 }
 .animated {
 opacity: 0;
@@ -300,18 +297,12 @@ opacity: 0;
   width: 80%; /* Ширина заголовка на мобильных устройствах */
   max-width: 400px; /* Максимальная ширина заголовка */
 }
-.sub-header h1 span {
-  font-size: 4vw;
-}
 
 @media screen and (max-width: 768px) {
   .sub-header h1 {
     font-size: 14vw;
     width: 90%; /* Ширина заголовка на мобильных устройствах */
     padding-left: 1em; /* Отступ слева на мобильных устройствах */
-  }
-  .sub-header h1 span {
-    font-size: 14vw;
   }
 }
 .logo-container {
@@ -690,7 +681,7 @@ animation: appear 0.3s backwards;
 
 .container .card .content p {
   color: #333;
-  padding: 15px 50px;
+  padding: 15px 30px;
 }
 
 .container .card .content a {
@@ -1008,11 +999,11 @@ a {
     padding: 0px 0px;
   }
   .menu__link {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     align-items: center;
   }
   .social-icon__link {
-    font-size: 1.8rem;
+    font-size: 2rem;
     align-items: center;
   }
 }
