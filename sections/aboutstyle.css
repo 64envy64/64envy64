@@ -711,7 +711,7 @@ animation: appear 0.3s backwards;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 50vh;
+  height: 90vh;
 }
 .numbers {
   background-color: #ece8f7;
