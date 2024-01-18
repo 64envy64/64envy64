@@ -770,7 +770,7 @@ padding: .7rem 1.5rem;
 color: #838383;
 }
 #secondbox {
-transform: translateY(-5%);
+transform: translateY(-8%);
 }
 .home::before{
 content:'';
