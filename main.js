@@ -131,16 +131,21 @@ btn.on('click', function(e) {
 
 /*-- PARALLAXBACK --*/
 document.addEventListener('DOMContentLoaded', function () {
-    const courseSection = document.querySelector('.course');
-    const video = document.getElementById('backgroundVideo');
+  const video = document.getElementById('backgroundVideo');
+  
+  // Получаем высоту видео, чтобы знать, когда остановить параллакс
+  const videoHeight = video.offsetHeight;
 
-    window.addEventListener('scroll', function () {
-      const scrollPosition = window.scrollY;
+  window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
 
-      // Изменяем translateY для создания эффекта параллакса
-      video.style.transform = `translateY(${scrollPosition / 2}px)`;
-    });
+    // Рассчитываем translateY, чтобы создать эффект параллакса
+    const translateY = Math.max(0, Math.min(videoHeight / 2, scrollPosition / 2));
+
+    // Применяем translateY к видео
+    video.style.transform = `translateY(${translateY}px)`;
   });
+});
 
 // scrollReveal.js
 

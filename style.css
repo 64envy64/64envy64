@@ -3,6 +3,17 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+html,body {
+  overscroll-behavior: none;
+}
+body{
+  background: #f0f0f0;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
 ::-webkit-scrollbar {
 width: 8px;
 height: 6px;
@@ -41,8 +52,8 @@ transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 #back-to-top {
 display: inline-block;
 background-color: #6b69e2be;
-width: 50px;
-height: 50px;
+width: 46px;
+height: 46px;
 text-align: center;
 border-radius: 4px;
 position: fixed;
@@ -60,7 +71,7 @@ font-family: FontAwesome;
 font-weight: normal;
 font-style: normal;
 font-size: 2em;
-line-height: 50px;
+line-height: 46px;
 color: #fff;
 }
 #back-to-top:hover {
@@ -74,13 +85,15 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
-body{
-  background: #f0f0f0;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  text-align: center;
-  box-sizing: border-box;
+@media (max-width: 400px) {
+  #back-to-top {
+    width: 45px;
+    height: 45px;
+  }
+  #back-to-top::after {
+    font-size: 1.8em;
+    line-height: 45px;
+  }
 }
 body::before {
 content: '';
@@ -204,7 +217,11 @@ transition: background 0.3s;
 .read-more-btn:hover {
 background-color: #423d91;
 }
-
+@media (max-width: 400px) {
+  .news-item img {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 768px) {
 .news-item {
   width: 100%;
@@ -273,6 +290,17 @@ color: #00000096;
 }
 .question button .d-arrow.rotate{
 transform: rotate(180deg);
+}
+@media (max-width: 400px) {
+  .accordion-text .title {
+    font-size: 32px;
+  }
+  .question span {
+    font-size: 20px;
+    }
+  .question button {
+    padding: 17px 15px;
+  }
 }
 .preloader {
 position: fixed;
@@ -346,7 +374,7 @@ opacity: 0;
 }
 
 .header {
-min-height: 100vh;
+min-height: 85vh;
 width: 100%;
 position: relative;
 overflow: hidden;
@@ -742,7 +770,7 @@ padding: .7rem 1.5rem;
 color: #838383;
 }
 #secondbox {
-transform: translateY(-10%);
+transform: translateY(-5%);
 }
 .home::before{
 content:'';
@@ -753,6 +781,11 @@ border-top: 70vh solid #f0f0f0;
 width: 100%;
 border-radius: 50%;
 z-index: -1;
+}
+@media (max-width: 400px) {
+  .box-container .box {
+    height: 18rem;
+  }
 }
 @media (max-width: 1200px) {
 .box-container {
@@ -1027,28 +1060,90 @@ opacity: 1;
 .cta {
   margin: 100px auto;
   width: 90%;
-  background-image: linear-gradient(rgba(2, 4, 14, 0.418),rgba(2, 4, 14, 0.418)), url(images/background.png);
-  background-position: center;
-  background-size: cover;
+  position: relative;
   border-radius: 10px;
   text-align: center;
   padding: 100px 0;
+  overflow: hidden;
 }
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(rgba(2, 4, 14, 0.418),rgba(2, 4, 14, 0.418)), url('images/background.png') center/cover no-repeat; /* Применяем фоновое изображение */
+}
+
 .cta h1{
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
+  font-weight: 600;
 }
-@media(max-width: 1000px){
+
+.cta .hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fcfcfc;
+  border: 1px solid #ffffff0e;
+  border-radius: 5px;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.cta .hero-btn:hover{
+  background: #524FD5;
+}
+
+.cta .hero-btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #524FD5;
+  z-index: -1;
+  transition: 0.7s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.cta .hero-btn:hover::before{
+  height: 180%;
+}
+
+@media (max-width: 1000px){
   .cta h1{
-      font-size: 20px;
-      padding: 5px 5px;
+    font-size: 20px;
+    padding: 5px 5px;
   }
   .cta {
     width: 95%;
   }
 }
 
+@media (max-width: 700px) {
+  .cta {
+    padding: 60px 10px; /* Уменьшаем верхний и нижний внутренний отступ */
+  }
+
+  .cta h1 {
+    margin-bottom: 20px; /* Уменьшаем отступ после заголовка */
+  }
+
+  .hero-btn {
+    font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+    padding: 10px 20px; /* Уменьшаем внутренние отступы кнопки */
+  }
+}
 /*--partners--*/
 
 .partners {
