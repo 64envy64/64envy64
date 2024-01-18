@@ -727,7 +727,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 margin-bottom: -6rem;
-transform: translateY(-40%);
+transform: translateY(-30%);
 }
 .box-container .box {
 height: 15rem;
@@ -787,6 +787,7 @@ z-index: -1;
     height: 18rem;
   }
 }
+
 @media (max-width: 1200px) {
 .box-container {
   transform: translateY(0%);
@@ -798,6 +799,15 @@ z-index: -1;
 #secondbox {
   transform: translateY(0);
 }
+}
+@media (max-width: 1600px) {
+  #secondbox {
+    transform: translateY(0%);
+  }
+  .box-container {
+    transform: translateY(-15%);
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 700px) {
 .box-container {
