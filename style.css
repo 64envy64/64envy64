@@ -74,6 +74,16 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
+@media (max-width: 400px) {
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+  }
+  #back-to-top::after {
+    line-height: 45px;
+    font-size: 1.8em;
+  }
+}
 body{
   background: #f0f0f0;
   align-items: center;
