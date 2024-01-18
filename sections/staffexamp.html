@@ -64,9 +64,19 @@
       </div>
       <script type="text/javascript">
         const toggleMenu = () => {
-          document.body.classList.toggle("open");
-        };
-      </script>
+         const body = document.body;
+         body.classList.toggle("open");
+ 
+         // Проверка, открыто ли меню
+         if (body.classList.contains("open")) {
+         // Заблокировать прокрутку страницы
+           body.style.overflow = "hidden";
+         } else {
+         // Разблокировать прокрутку страницы
+           body.style.overflow = "";
+   }
+ };
+       </script>
 
 <!--INTERACTIVE-->
 <section class="news-container no-resize">
