@@ -49,58 +49,64 @@
       </div>
       <h1><span style="background-color: #804ae498">A</span>MBITIOUS<br><span style="background-color: #804ae498">I</span>NSPIRING<br><span style="background-color: #804ae498">S</span>TRONG</h1>
     </section>
-      <button class="navbar-burger" onclick="toggleMenu()"></button>
-      <div class="menu">
-        <nav>
-          <a href="about.html" style="animation-delay: 0.1s">О нас</a>
-          <a href="#" style="animation-delay: 0.2s">Грант</a>
-          <a href="#" style="animation-delay: 0.2s">Поступление</a>
-          <a href="#" style="animation-delay: 0.3s">Новости</a>
-          <a href="#" style="animation-delay: 0.5s">Контакты</a>
-          <a href="#" style="animation-delay: 0.6s">Родителям</a>
-        </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.1s" onclick="changeBackground('aboutusdesc.jpg')">О нас <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Грант <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <a href="#" class="dropbtn" style="animation-delay: 0.4s">Новости</a>
+        <a href="contact.html" class="dropbtn" style="animation-delay: 0.5s">Контакты</a>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-      </div>
-      <script type="text/javascript">
-        const toggleMenu = () => {
-         const body = document.body;
-         body.classList.toggle("open");
- 
-         // Проверка, открыто ли меню
-         if (body.classList.contains("open")) {
-         // Заблокировать прокрутку страницы
-           body.style.overflow = "hidden";
-         } else {
-         // Разблокировать прокрутку страницы
-           body.style.overflow = "";
-   }
- };
-       </script>
+    <script type="text/javascript">
+      const toggleMenu = () => {
+       const body = document.body;
+       body.classList.toggle("open");
 
-<!--INTERACTIVE-->
-<section class="news-container no-resize">
-  <a href="staffmain.html" class="news-item">
-      <img src="../assets/cardss.png" alt="News 1">
-      <div class="news-content">
-          <h3>Преподавательский состав</h3>
-      </div>
-  </a>
-
-  <a href="#" class="news-item">
-      <img src="../assets/cardss.png" alt="News 2">
-      <div class="news-content">
-          <h3>О кампусе</h3>
-      </div>
-  </a>
-
-  <a href="#" class="news-item">
-      <img src="../assets/cardss.png" alt="News 3">
-      <div class="news-content">
-          <h3>Учитель Года 2023</h3>
-      </div>
-  </a>
-</section>
+       // Проверка, открыто ли меню
+       if (body.classList.contains("open")) {
+       // Заблокировать прокрутку страницы
+         body.style.overflow = "hidden";
+       } else {
+       // Разблокировать прокрутку страницы
+         body.style.overflow = "";
+ }
+};
+    </script>
 
 <!--About us-->
 
@@ -126,10 +132,10 @@
 <div class="container">
   <div class="card" id="firstcard" style="--clr: #543fb4">
       <div class="img-box">
-          <img src="../assets/ib.png">
+          <img src="../assets/point.png">
       </div>
       <div class="content">
-          <h2>Leafs</h2>
+          <h2>Наша цель</h2>
           <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Architecto, hic? Magnam eum error saepe doloribus corrupti
@@ -139,10 +145,10 @@
   </div>
   <div class="card" id="secondcard" style="--clr: #543fb4">
       <div class="img-box">
-          <img src="../assets/ib.png">
+          <img src="../assets/missionicon.png">
       </div>
       <div class="content">
-          <h2>IB</h2>
+          <h2>Наша миссия</h2>
           <p>
               (International Baccalaureate)<br>
               В среднем и старшем звене - углубленное
@@ -154,10 +160,10 @@
   </div>
   <div class="card" id="thirdcard" style="--clr: #543fb4">
       <div class="img-box">
-          <img src="../assets/niscard.png">
+          <img src="../assets/videnie.png">
       </div>
       <div class="content">
-          <h2>NIS-Program</h2>
+          <h2>Наше виденье</h2>
           <p>
               Наша школа работает по NIS-Program, которая
               развивает критическое и творческое мышление,
@@ -173,14 +179,39 @@
   <h1>Мы в цифрах</h1>
 </div>
 <section class="numbers">
-  <div class="containerr">
-    <h1 class="text" id="firstset">17,000<span>КВ МЕТРОВ</span></h1>
-    <h1 class="text" id="secondset">800<span>УЧЕНИКОВ</span></h1>
-    <h1 class="text" id="thirdset">130+<span>ПОБЕД В ОЛИМПИАДАХ</span></h1>
-    <h1 class="text" id="fourthset">6<span>СПОРТ-ЗАЛОВ</span></h1>
-    <h1 class="text" id="fiveset">30+<span>НАПРАВЛЕНИЙ</span></h1>
-  </div>
+<div class="containerr">
+  <h1 class="text" id="firstset">17,000<span>КВ МЕТРОВ</span></h1>
+  <h1 class="text" id="secondset">800<span>УЧЕНИКОВ</span></h1>
+  <h1 class="text" id="thirdset">130+<span>ПОБЕД В ОЛИМПИАДАХ</span></h1>
+  <h1 class="text" id="fourthset">6<span>СПОРТ-ЗАЛОВ</span></h1>
+  <h1 class="text" id="fiveset">30+<span>НАПРАВЛЕНИЙ</span></h1>
+</div>
 </section>
+
+<!--INTERACTIVE-->
+<section class="news-container no-resize">
+  <a href="staffmain.html" class="news-item">
+      <img src="../assets/cardss.png" alt="News 1">
+      <div class="news-content">
+          <h3>Преподавательский состав</h3>
+      </div>
+  </a>
+
+  <a href="#" class="news-item">
+      <img src="../assets/cardss.png" alt="News 2">
+      <div class="news-content">
+          <h3>О кампусе</h3>
+      </div>
+  </a>
+
+  <a href="#" class="news-item">
+      <img src="../assets/cardss.png" alt="News 3">
+      <div class="news-content">
+          <h3>Внутренняя инфраструктура</h3>
+      </div>
+  </a>
+</section>
+
 <!-- Back to top button -->
 <a id="back-to-top"></a>
 
@@ -212,7 +243,7 @@
       <li class="menu__item"><a class="menu__link" href="#">Грант</a></li>
       <li class="menu__item"><a class="menu__link" href="../contact.html">Контакты</a></li>
     </ul>
-    <p>&copy; 2024 Aqbobek International School | All Rights Reserved</p>
+    <p>&copy; 2024 Akbobek International School | All Rights Reserved</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

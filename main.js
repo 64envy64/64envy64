@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 // scrollReveal.js
 
 document.addEventListener('DOMContentLoaded', function () {

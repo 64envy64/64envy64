@@ -130,16 +130,6 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
-@media (max-width: 400px) {
-  #back-to-top {
-    width: 45px;
-    height: 45px;
-  }
-  #back-to-top::after {
-    font-size: 1.8em;
-    line-height: 45px;
-  }
-}
 body{
   background: #f0f0f0;
   overflow-x: hidden;
@@ -287,7 +277,7 @@ opacity: 0;
 .sub-header {
   min-height: 55vh;
   width: 100%;
-  background-image: linear-gradient(rgba(2, 4, 14, 0.685), rgba(2, 4, 14, 0.418)), url(../images/aboutus.jpg);
+  background-image: linear-gradient(rgba(2, 4, 14, 0.685), rgba(2, 4, 14, 0.418)), url(../images/o-nas.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -307,7 +297,6 @@ opacity: 0;
   width: 80%; /* Ширина заголовка на мобильных устройствах */
   max-width: 400px; /* Максимальная ширина заголовка */
 }
-
 @media screen and (max-width: 768px) {
   .sub-header h1 {
     font-size: 14vw;
@@ -728,7 +717,7 @@ animation: appear 0.3s backwards;
   border-radius: var(--border-radius);
 }
 .text {
-  font-size: 7.5vw;
+  font-size: 8vw;
   letter-spacing: -0.01em;
   line-height: 95%;
   left: 20%;

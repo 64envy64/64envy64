@@ -49,33 +49,64 @@
       </div>
       <h1>Контакты</h1>
     </section>
-      <button class="navbar-burger" onclick="toggleMenu()"></button>
-      <div class="menu">
-        <nav>
-          <a href="sections/about.html" style="animation-delay: 0.1s">О нас</a>
-          <a href="#" style="animation-delay: 0.2s">Грант</a>
-          <a href="#" style="animation-delay: 0.3s">Новости</a>
-          <a href="#" style="animation-delay: 0.5s">Контакты</a>
-          <a href="#" style="animation-delay: 0.6s">Родителям</a>
-        </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.1s" onclick="changeBackground('aboutusdesc.jpg')">О нас <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Грант <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+        <a href="#" class="dropbtn" style="animation-delay: 0.4s">Новости</a>
+        <a href="contact.html" class="dropbtn" style="animation-delay: 0.5s">Контакты</a>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-      </div>
-      <script type="text/javascript">
-        const toggleMenu = () => {
-         const body = document.body;
-         body.classList.toggle("open");
- 
-         // Проверка, открыто ли меню
-         if (body.classList.contains("open")) {
-         // Заблокировать прокрутку страницы
-           body.style.overflow = "hidden";
-         } else {
-         // Разблокировать прокрутку страницы
-           body.style.overflow = "";
-   }
- };
-       </script>
+    <script type="text/javascript">
+      const toggleMenu = () => {
+       const body = document.body;
+       body.classList.toggle("open");
+
+       // Проверка, открыто ли меню
+       if (body.classList.contains("open")) {
+       // Заблокировать прокрутку страницы
+         body.style.overflow = "hidden";
+       } else {
+       // Разблокировать прокрутку страницы
+         body.style.overflow = "";
+ }
+};
+    </script>
       </section>
 
 <!--Contact us-->
