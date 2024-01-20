@@ -127,15 +127,6 @@ $(document).ready(function(){
     $(".dropdown-content").hide();
     $(".dropbtn").css("opacity", "1");
   });
-
-  // Добавить эффекты наведения с помощью jQuery
-  $(".dropbtn, .dropdown .dropbtn").hover(function(){
-    $(this).stop().animate({opacity: 1}, 200);
-  }, function(){
-    if (!$(this).next(".dropdown-content").is(":visible")) {
-      $(this).stop().animate({opacity: 0.25}, 200);
-    }
-  });
 });
   </script>
             <div class="box-container">
