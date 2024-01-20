@@ -562,7 +562,7 @@ animation: appear 0.3s backwards;
   }
   .dropdown-content a{
     font-size: 16px;
-    margin-left: -195px;
+    margin-left: -120px;
   }
 }
 @media (min-width: 401px) and (max-width: 700px) {
