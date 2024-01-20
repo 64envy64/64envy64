@@ -520,13 +520,16 @@ background-image: url("./assets/close.svg");
   visibility: visible;
   }
   
-  .menu nav a {
+  .menu nav:hover a {
   opacity: 0.25;
   }
-  .menu nav .dropbtn {
+  .menu nav .dropbtn:hover {
+    opacity: 1;
+  }
+  .menu nav:hover .dropbtn {
     opacity: 0.25;
     }
-  .menu nav a {
+  .menu nav a:hover {
   opacity: 1;
   }
   .menu nav {
@@ -586,6 +589,9 @@ body.open .menu .dropbtn {
   }
   .dropdown {
     position: relative;
+    display: block;
+  }
+  .dropdown-content:hover {
     display: block;
   }
 .dropdown-content {
