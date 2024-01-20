@@ -520,16 +520,16 @@ opacity: 1;
 visibility: visible;
 }
 
-.menu nav:hover a {
+.menu nav:focus a {
 opacity: 0.25;
 }
-.menu nav:hover .dropbtn {
+.menu nav:focus .dropbtn {
   opacity: 0.25;
   }
-.menu nav .dropbtn:hover {
+.menu nav .dropbtn:focus {
   opacity: 1;
   }
-.menu nav a:hover {
+.menu nav a:focus {
 opacity: 1;
 }
 .menu nav {
@@ -638,14 +638,12 @@ animation: appear 0.3s backwards;
 .dropdown .dropbtn:focus .fa-chevron-right {
   transform: translateX(5px);
 }
-@media (min-width: 401px) and (max-width: 700px) {
-  .dropdown-content a {
-    font-size: 22px;
-    margin-left: -100px;
-  }
+@media screen and (max-width: 400px) {
   .dropbtn {
-    font-size: 22px;
-    margin-left: 20px;
+    font-size: 18px;
+  }
+  .dropdown-content a{
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1200px) {
