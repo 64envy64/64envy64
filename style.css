@@ -639,7 +639,7 @@ body.open .menu .dropbtn {
   }
   .dropdown-content a{
     font-size: 16px;
-    margin-left: -200px;
+    margin-left: -180px;
   }
 }
 @media (min-width: 401px) and (max-width: 700px) {
