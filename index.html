@@ -124,6 +124,13 @@
     $(document).click(function(){
       $(".dropdown-content").hide();
     });
+  
+    // Добавить эффекты наведения с помощью jQuery
+    $(".dropbtn").hover(function(){
+      $(this).css("opacity", "1");
+    }, function(){
+      $(this).css("opacity", "0.25");
+    });
   });
   </script>
             <div class="box-container">
