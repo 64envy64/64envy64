@@ -595,8 +595,8 @@ animation: appear 0.3s backwards;
   display: none;
   position: absolute;
   min-width: 160px;
-  z-index: 1;
-  left: 120%; /* Позиционирование выпадающего меню справа */
+  z-index: 1501;
+  left: 100%; /* Позиционирование выпадающего меню справа */
   top: 50%; /* Выравнивание по середине кнопки */
   transform: translateY(-50%); /* Смещение вверх на половину высоты элемента */
 }
@@ -607,6 +607,7 @@ animation: appear 0.3s backwards;
   display: block;
   animation: appear 0.3s backwards;
   margin-left: 14vw;
+  z-index: 1501;
 }
 .dropdown .dropbtn:focus + .dropdown-content {
   display: block;
@@ -640,11 +641,9 @@ animation: appear 0.3s backwards;
 @media screen and (max-width: 400px) {
   .dropbtn {
     font-size: 18px;
-    margin-left: 2px;
   }
   .dropdown-content a{
     font-size: 16px;
-    margin-left: -120px;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1200px) {
