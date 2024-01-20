@@ -60,18 +60,18 @@
           <div class="dropdown">
             <button class="dropbtn" style="animation-delay: 0.1s">О нас <i class="fa-solid fa-chevron-right"></i></button>
             <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
-              <a href="#">Подменю 4</a>
+              <a href="sections/about.html">О AIS</a>
+              <a href="sections/staffmain.html">Наша команда</a>
+              <a href="#">О кампусе</a>
+              <a href="#">Внутренняя инфраструктура</a>
             </div>
           </div>
           <div class="dropdown">
-            <button class="dropbtn" style="animation-delay: 0.2s">Грант <i class="fa-solid fa-chevron-right"></i></button>
+            <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
             <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
+              <a href="#">Анкета</a>
+              <a href="#">Гранты</a>
+              <a href="#">Стоимость обучения</a>
               <a href="#">Подменю 4</a>
             </div>
           </div>
@@ -89,8 +89,8 @@
           <div class="dropdown">
             <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
             <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
+              <a href="#">Правила школы</a>
+              <a href="#">Политика обработки личных данных</a>
               <a href="#">Подменю 3</a>
               <a href="#">Подменю 4</a>
             </div>
@@ -112,6 +112,23 @@
    }
  };
       </script>
+<script>
+$(document).ready(function(){
+  $(".dropbtn").click(function(e){
+    e.stopPropagation(); // Остановить всплытие события
+    $(".dropdown-content").hide(); // Скрыть все другие выпадающие меню
+    $(this).next(".dropdown-content").toggle(); // Переключить видимость текущего выпадающего меню
+    $(".dropbtn").css("opacity", "0.25"); // Сделать все кнопки полупрозрачными
+    $(this).css("opacity", "1"); // Сделать текущую кнопку полностью видимой
+  });
+
+  // Скрыть выпадающее меню и восстановить opacity всех кнопок при клике вне его
+  $(document).click(function(){
+    $(".dropdown-content").hide();
+    $(".dropbtn").css("opacity", "1");
+  });
+});
+  </script>
             <div class="box-container">
               <div class="box" id="firstbox">
                 <i class="fas fa-graduation-cap"></i>
@@ -133,7 +150,7 @@
       <section class="home">
       <div class="text-box">
         <h1>HARMONY OF <span></span></h1>
-        <p>Уникальная программа обучения для вашего ребенка.<br>Получите качественное международное образование уже сейчас.</p>
+        <p>Уникальная программа обучения для вашего ребенка<br>Получите качественное международное образование уже сейчас.</p>
         <a href="" class="hero-btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
       </div>
   </section>

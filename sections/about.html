@@ -55,18 +55,18 @@
         <div class="dropdown">
           <button class="dropbtn" style="animation-delay: 0.1s">О нас <i class="fa-solid fa-chevron-right"></i></button>
           <div class="dropdown-content">
-            <a href="#">Подменю 1</a>
-            <a href="#">Подменю 2</a>
-            <a href="#">Подменю 3</a>
-            <a href="#">Подменю 4</a>
+            <a href="sections/about.html">О AIS</a>
+            <a href="sections/staffmain.html">Наша команда</a>
+            <a href="#">О кампусе</a>
+            <a href="#">Внутренняя инфраструктура</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn" style="animation-delay: 0.2s">Грант <i class="fa-solid fa-chevron-right"></i></button>
+          <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
           <div class="dropdown-content">
-            <a href="#">Подменю 1</a>
-            <a href="#">Подменю 2</a>
-            <a href="#">Подменю 3</a>
+            <a href="#">Анкета</a>
+            <a href="#">Гранты</a>
+            <a href="#">Стоимость обучения</a>
             <a href="#">Подменю 4</a>
           </div>
         </div>
@@ -84,8 +84,8 @@
         <div class="dropdown">
           <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
           <div class="dropdown-content">
-            <a href="#">Подменю 1</a>
-            <a href="#">Подменю 2</a>
+            <a href="#">Правила школы</a>
+            <a href="#">Политика обработки личных данных</a>
             <a href="#">Подменю 3</a>
             <a href="#">Подменю 4</a>
           </div>
@@ -107,11 +107,28 @@
  }
 };
     </script>
+<script>
+$(document).ready(function(){
+$(".dropbtn").click(function(e){
+  e.stopPropagation(); // Остановить всплытие события
+  $(".dropdown-content").hide(); // Скрыть все другие выпадающие меню
+  $(this).next(".dropdown-content").toggle(); // Переключить видимость текущего выпадающего меню
+  $(".dropbtn").css("opacity", "0.25"); // Сделать все кнопки полупрозрачными
+  $(this).css("opacity", "1"); // Сделать текущую кнопку полностью видимой
+});
+
+// Скрыть выпадающее меню и восстановить opacity всех кнопок при клике вне его
+$(document).click(function(){
+  $(".dropdown-content").hide();
+  $(".dropbtn").css("opacity", "1");
+});
+});
+</script>
 
 <!--About us-->
 
   <div class="about-header">
-    <h1>Aqbobek International School</h1>
+    <h1>Akbobek International School</h1>
   </div>
   <section class="about-us">
   <div class="center-container">
@@ -137,9 +154,9 @@
       <div class="content">
           <h2>Наша цель</h2>
           <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Architecto, hic? Magnam eum error saepe doloribus corrupti
-              repellat quisquam alias doloremque!
+              Воспитание глобальных граждан, готовых к
+              инновациям и изменениям, формируя будущее
+              нашего мира
           </p>
       </div>
   </div>
@@ -150,11 +167,9 @@
       <div class="content">
           <h2>Наша миссия</h2>
           <p>
-              (International Baccalaureate)<br>
-              В среднем и старшем звене - углубленное
-              изучение математики и английского языка,
-              поэтапно переходящее в школу, обучающую
-              по программе IB
+              Мы формируем лидеров с широким мировоззрением
+              и глубоким национальным сознанием за
+              будущее государства
           </p>
       </div>
   </div>
@@ -165,10 +180,8 @@
       <div class="content">
           <h2>Наше виденье</h2>
           <p>
-              Наша школа работает по NIS-Program, которая
-              развивает критическое и творческое мышление,
-              функциональную грамотность и способность работать как в группе,
-              так и индивидуально
+              Школа подготовки глобальных лидеров будущего,
+              любознательных и социально образованных граждан
           </p>
       </div>
   </div>
@@ -184,7 +197,7 @@
   <h1 class="text" id="secondset">800<span>УЧЕНИКОВ</span></h1>
   <h1 class="text" id="thirdset">130+<span>ПОБЕД В ОЛИМПИАДАХ</span></h1>
   <h1 class="text" id="fourthset">6<span>СПОРТ-ЗАЛОВ</span></h1>
-  <h1 class="text" id="fiveset">30+<span>НАПРАВЛЕНИЙ</span></h1>
+  <h1 class="text" id="fiveset">30+<span>ДОП.НАПРАВЛЕНИЙ</span></h1>
 </div>
 </section>
 

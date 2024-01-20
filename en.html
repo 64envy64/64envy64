@@ -54,64 +54,81 @@
         </div>
       </div>
     </section>
-      <button class="navbar-burger" onclick="toggleMenu()"></button>
-      <div class="menu">
-        <nav>
-          <div class="dropdown">
-            <button class="dropbtn" style="animation-delay: 0.1s">О нас <i class="fa-solid fa-chevron-right"></i></button>
-            <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
-              <a href="#">Подменю 4</a>
-            </div>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.1s">О нас <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="sections/about.html">О AIS</a>
+            <a href="sections/staffmain.html">Наша команда</a>
+            <a href="#">О кампусе</a>
+            <a href="#">Внутренняя инфраструктура</a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn" style="animation-delay: 0.2s">Грант <i class="fa-solid fa-chevron-right"></i></button>
-            <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
-              <a href="#">Подменю 4</a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Анкета</a>
+            <a href="#">Гранты</a>
+            <a href="#">Стоимость обучения</a>
+            <a href="#">Подменю 4</a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
-            <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
-              <a href="#">Подменю 4</a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.2s">Поступление <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Подменю 1</a>
+            <a href="#">Подменю 2</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
           </div>
-          <a href="#" class="dropbtn" style="animation-delay: 0.4s">Новости</a>
-          <a href="contact.html" class="dropbtn" style="animation-delay: 0.5s">Контакты</a>
-          <div class="dropdown">
-            <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
-            <div class="dropdown-content">
-              <a href="#">Подменю 1</a>
-              <a href="#">Подменю 2</a>
-              <a href="#">Подменю 3</a>
-              <a href="#">Подменю 4</a>
-            </div>
+        </div>
+        <a href="#" class="dropbtn" style="animation-delay: 0.4s">Новости</a>
+        <a href="contact.html" class="dropbtn" style="animation-delay: 0.5s">Контакты</a>
+        <div class="dropdown">
+          <button class="dropbtn" style="animation-delay: 0.5s">Родителям <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Правила школы</a>
+            <a href="#">Политика обработки личных данных</a>
+            <a href="#">Подменю 3</a>
+            <a href="#">Подменю 4</a>
           </div>
-        </nav>
-      </div>
-      <script type="text/javascript">
-        const toggleMenu = () => {
-         const body = document.body;
-         body.classList.toggle("open");
- 
-         // Проверка, открыто ли меню
-         if (body.classList.contains("open")) {
-         // Заблокировать прокрутку страницы
-           body.style.overflow = "hidden";
-         } else {
-         // Разблокировать прокрутку страницы
-           body.style.overflow = "";
-   }
- };
-      </script>
+        </div>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => {
+       const body = document.body;
+       body.classList.toggle("open");
+
+       // Проверка, открыто ли меню
+       if (body.classList.contains("open")) {
+       // Заблокировать прокрутку страницы
+         body.style.overflow = "hidden";
+       } else {
+       // Разблокировать прокрутку страницы
+         body.style.overflow = "";
+ }
+};
+    </script>
+<script>
+$(document).ready(function(){
+$(".dropbtn").click(function(e){
+  e.stopPropagation(); // Остановить всплытие события
+  $(".dropdown-content").hide(); // Скрыть все другие выпадающие меню
+  $(this).next(".dropdown-content").toggle(); // Переключить видимость текущего выпадающего меню
+  $(".dropbtn").css("opacity", "0.25"); // Сделать все кнопки полупрозрачными
+  $(this).css("opacity", "1"); // Сделать текущую кнопку полностью видимой
+});
+
+// Скрыть выпадающее меню и восстановить opacity всех кнопок при клике вне его
+$(document).click(function(){
+  $(".dropdown-content").hide();
+  $(".dropbtn").css("opacity", "1");
+});
+});
+</script>
             <div class="box-container">
               <div class="box" id="firstbox">
                 <i class="fas fa-graduation-cap"></i>
@@ -133,8 +150,8 @@
       <section class="home">
       <div class="text-box">
         <h1>HARMONY OF <span></span></h1>
-        <p>Уникальная программа обучения для вашего ребенка.<br>Получите качественное международное образование уже сейчас.</p>
-        <a href="" class="hero-btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+        <p>A unique learning program for your child<br>Get a quality international education now.</p>
+        <a href="" class="hero-btn">GET COUNSELING</a>
       </div>
   </section>
 <!-- Back to top button -->
@@ -178,7 +195,7 @@
   <a href="#" class="news-item">
       <img src="news/news2.png" alt="News 2">
       <div class="news-content">
-          <h3>Призеры международной олимпиады Owlympia</h3>
+          <h3>Winners of Owlympia International Olympiad</h3>
           <p class="news-date">07.11.23</p>
       </div>
   </a>
@@ -186,7 +203,7 @@
   <a href="#" class="news-item">
       <img src="news/news1.png" alt="News 3">
       <div class="news-content">
-          <h3>Учитель Года 2023</h3>
+          <h3>Teacher of the Year 2023</h3>
           <p class="news-date">11.12.23</p>
       </div>
   </a>
@@ -194,8 +211,8 @@
 <!---Pluses-->
 <br>
 <section class="pluses no-resize">
-    <h1>МИССИЯ ШКОЛЫ</h1>
-    <p>ГОТОВИТЬ ОТКРЫТЫХ К ИННОВАЦИЯМ, СОЦИАЛЬНО ОТВЕТСТВЕННЫХ ГРАЖДАН МИРА,<br>КОТОРЫЕ БУДУТ СЛУЖИТЬ ВО БЛАГО ОБЩЕСТВА.</p>
+    <h1>SCHOOL MISSION</h1>
+    <p>WE DEVELOP LEADERS WITH A BROAD WORLDVIEW AND A DEEP NATIONAL CONSCIENCE FOR THE FUTURE OF THE STATE</p>
   </section>
   <div class="purple-line"></div>
     <div class="wrapper">
