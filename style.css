@@ -644,16 +644,6 @@ animation: appear 0.3s backwards;
   }
   .dropdown-content a{
     font-size: 16px;
-    margin-left: -200px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .dropbtn {
-    font-size: 18px;
-    margin-left: 2px;
-  }
-  .dropdown-content a{
-    font-size: 16px;
     margin-left: -120px;
   }
 }
