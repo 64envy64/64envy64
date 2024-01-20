@@ -520,15 +520,17 @@ opacity: 1;
 visibility: visible;
 }
 
-.menu nav a {
-opacity: 0.25;
-}
-.menu nav .dropbtn {
+.menu nav:hover a {
   opacity: 0.25;
+  transition: 0.3s;
   }
-.menu nav a {
-opacity: 1;
-}
+  .menu nav .dropbtn {
+    opacity: 0.25;
+    }
+  .menu nav a:hover {
+  opacity: 1;
+  transition: 0.3s;
+  }
 .menu nav {
 display: flex;
 flex-direction: column;
@@ -540,20 +542,10 @@ align-items: flex-start;
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  left: 275px; /* Установите фиксированное расстояние здесь */
+  left: 280px; /* Установите фиксированное расстояние здесь */
   top: 50%; /* Выравнивание по середине кнопки */
   transform: translateY(-50%); /* Смещение вверх на половину высоты элемента */
 }
-.dropdown a {
-  position: relative;
-  color: #f9f9f9;
-  font-size: 32px;
-  padding: 20px 0;
-  align-items: flex-start;
-  width: 300px;
-  text-decoration: none;
-  transition: 0.4s;
-  }
 .menu .dropbtn::after {
 content: "";
 position: absolute;
@@ -595,21 +587,23 @@ body.open .menu .dropbtn {
   z-index: 1501;
   left: 100%; /* Позиционирование выпадающего меню справа */
   top: 50%; /* Выравнивание по середине кнопки */
-  transform: translateY(-50%); /* Смещение вверх на половину высоты элемента */
+  transform: translateY(-40%); /* Смещение вверх на половину высоты элемента */
 }
 .dropdown-content a {
   color: white; /* Установи цвет текста на белый */
-  padding: 12px 16px;
+  padding: 20px 16px;
+  width: 200px;
+  text-align: left;
   text-decoration: none;
   display: block;
   animation: appear 0.3s backwards;
-  margin-left: 14vw;
+  margin-left: 17vw;
   z-index: 1501;
+  font-size: 30px;
 }
 /* Добавьте стили для кнопки */
 .dropbtn {
   position: relative;
-  background-color: transparent;
   color: white; /* Установите цвет текста на белый */
   padding: 16px;
   font-size: 40px;
@@ -639,13 +633,13 @@ body.open .menu .dropbtn {
   }
   .dropdown-content a{
     font-size: 16px;
-    margin-left: -180px;
+    margin-left: -75px;
   }
 }
 @media (min-width: 401px) and (max-width: 700px) {
   .dropdown-content a {
-    font-size: 22px;
-    margin-left: -100px;
+    font-size: 20px;
+    margin-left: -30px;
   }
   .dropbtn {
     font-size: 22px;
