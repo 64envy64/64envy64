@@ -500,53 +500,50 @@ body.open .navbar-burger {
 background-image: url("./assets/close.svg");
 }
 .menu {
-  z-index: 1200;
-  top: 0;
-  left: 0;
-  display: grid;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.959);
-  opacity: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transition: 0.5s;
-  }
-  
-  body.open .menu {
-  opacity: 1;
-  visibility: visible;
-  }
-  
-  .menu nav:hover a {
+z-index: 1200;
+top: 0;
+left: 0;
+display: grid;
+align-items: center;
+justify-content: flex-start;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.959);
+opacity: 0;
+overflow: hidden;
+visibility: hidden;
+transition: 0.5s;
+}
+
+body.open .menu {
+opacity: 1;
+visibility: visible;
+}
+
+.menu nav a {
+opacity: 0.25;
+}
+.menu nav .dropbtn {
   opacity: 0.25;
   }
-  .menu nav .dropbtn:hover {
-    opacity: 1;
-  }
-  .menu nav:hover .dropbtn {
-    opacity: 0.25;
-    }
-  .menu nav a:hover {
-  opacity: 1;
-  }
-  .menu nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  }
-  .menu .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-    left: 275px; /* Установите фиксированное расстояние здесь */
-    top: 50%; /* Выравнивание по середине кнопки */
-    transform: translateY(-50%); /* Смещение вверх на половину высоты элемента */
-  }
+.menu nav a {
+opacity: 1;
+}
+.menu nav {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  left: 275px; /* Установите фиксированное расстояние здесь */
+  top: 50%; /* Выравнивание по середине кнопки */
+  transform: translateY(-50%); /* Смещение вверх на половину высоты элемента */
+}
 .dropdown a {
   position: relative;
   color: #f9f9f9;
@@ -589,9 +586,6 @@ body.open .menu .dropbtn {
   }
   .dropdown {
     position: relative;
-    display: block;
-  }
-  .dropdown-content:hover {
     display: block;
   }
 .dropdown-content {
