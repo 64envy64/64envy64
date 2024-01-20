@@ -605,10 +605,6 @@ body.open .menu .dropbtn {
   animation: appear 0.3s backwards;
   margin-left: 14vw;
   z-index: 1501;
-  transition: opacity 0.3s ease;
-}
-.dropdown-content a:hover {
-  opacity: 1; /* Измените прозрачность на 1 при наведении */
 }
 /* Добавьте стили для кнопки */
 .dropbtn {
