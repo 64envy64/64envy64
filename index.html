@@ -113,25 +113,21 @@
  };
       </script>
 <script>
-  $(document).ready(function(){
-    $(".dropbtn").click(function(e){
-      e.stopPropagation(); // Остановить всплытие события
-      $(".dropdown-content").hide(); // Скрыть все другие выпадающие меню
-      $(this).next(".dropdown-content").toggle(); // Переключить видимость текущего выпадающего меню
-    });
-  
-    // Скрыть выпадающее меню при клике вне его
-    $(document).click(function(){
-      $(".dropdown-content").hide();
-    });
-  
-    // Добавить эффекты наведения с помощью jQuery
-    $(".dropbtn, .dropdown dropbtn").hover(function(){
-      $(this).css("opacity", "1");
-    }, function(){
-      $(this).css("opacity", "0.25");
-    });
+$(document).ready(function(){
+  $(".dropbtn").click(function(e){
+    e.stopPropagation(); // Остановить всплытие события
+    $(".dropdown-content").hide(); // Скрыть все другие выпадающие меню
+    $(this).next(".dropdown-content").toggle(); // Переключить видимость текущего выпадающего меню
+    $(".dropbtn").css("opacity", "0.25"); // Сделать все кнопки полупрозрачными
+    $(this).css("opacity", "1"); // Сделать текущую кнопку полностью видимой
   });
+
+  // Скрыть выпадающее меню и восстановить opacity всех кнопок при клике вне его
+  $(document).click(function(){
+    $(".dropdown-content").hide();
+    $(".dropbtn").css("opacity", "1");
+  });
+});
   </script>
             <div class="box-container">
               <div class="box" id="firstbox">
