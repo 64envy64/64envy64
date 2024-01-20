@@ -638,12 +638,14 @@ animation: appear 0.3s backwards;
 .dropdown .dropbtn:focus .fa-chevron-right {
   transform: translateX(5px);
 }
-@media screen and (max-width: 400px) {
-  .dropbtn {
-    font-size: 18px;
+@media (min-width: 401px) and (max-width: 700px) {
+  .dropdown-content a {
+    font-size: 22px;
+    margin-left: -100px;
   }
-  .dropdown-content a{
-    font-size: 16px;
+  .dropbtn {
+    font-size: 22px;
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1200px) {
