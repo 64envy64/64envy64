@@ -634,6 +634,7 @@ body.open .menu .dropbtn {
   .dropdown-content a{
     font-size: 16px;
     margin-left: -75px;
+    padding: 12px 16px;
   }
 }
 @media (min-width: 401px) and (max-width: 700px) {
