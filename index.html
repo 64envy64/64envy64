@@ -112,6 +112,13 @@
    }
  };
       </script>
+      <script>
+        $(document).ready(function(){
+          $(".dropbtn").click(function(){
+            $(this).next(".dropdown-content").toggle();
+          });
+        });
+        </script>
             <div class="box-container">
               <div class="box" id="firstbox">
                 <i class="fas fa-graduation-cap"></i>
