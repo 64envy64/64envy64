@@ -158,9 +158,9 @@ document.addEventListener('DOMContentLoaded', function () {
   ScrollReveal().reveal('#thirdimg', { delay: 300, origin: 'right', distance: '20px', duration: 800 });
     ScrollReveal().reveal('.accordion-text .title', { delay: 300, origin: 'bottom', distance: '20px', duration: 800 });
     ScrollReveal().reveal('.partners h2', { delay: 300, origin: 'top', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#firstbox', { delay: 300, origin: 'right', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#secondbox', { delay: 300, origin: 'top', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#thirdbox', { delay: 300, origin: 'left', distance: '20px', duration: 800 });
+    ScrollReveal().reveal('#firstbox', { delay: 600, origin: 'right', distance: '20px', duration: 800 });
+    ScrollReveal().reveal('#secondbox', { delay: 600, origin: 'top', distance: '20px', duration: 800 });
+    ScrollReveal().reveal('#thirdbox', { delay: 600, origin: 'left', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#firstcourse', { delay: 300, origin: 'left', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#secondcourse', { delay: 300, origin: 'bottom', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#thirdcourse', { delay: 300, origin: 'right', distance: '20px', duration: 800 });
