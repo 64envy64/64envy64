@@ -915,47 +915,36 @@ z-index: -1;
 /*---- pluses ----*/
 
 .pluses {
-min-height: 22vh;
-width: 100%;
-background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.658)), url(images/mission2.jpg);
-background-position: center;
-background-size: cover;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
+  min-height: 22vh;
+  width: 100%;
+  background-image: radial-gradient(circle at center , #000000c4 5%, #1a002b 40%), url(images/mission2.jpg);
+  background-blend-mode: normal, multiply;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
 }
-
 .pluses h1 {
-font-size: 36px;
+font-size: 70px;
 font-weight: 600;
 color: #fff;
+text-align: left; /* Выравнивание текста по левому краю */
+padding-left: 20px; /* Отступ слева */
 margin-bottom: 10px;
 }
-
 .pluses p {
 color: #c4c4c4;
-font-size: 16px;
+font-size: 18px;
 font-weight: 500;
 line-height: 22px;
+width: 40%;
 padding: 10px;
-}
-.purple-line {
-position: relative;
-width: 68%;
-height: 10px;
-overflow: hidden;
-}
-.purple-line::before,
-.purple-line::after {
-content: "";
-position: absolute;
-background-color: #8953ed;
-height: 100%;
-width: 100%;
 }
 /**course**/
 .course {
@@ -1034,15 +1023,17 @@ transition: .3s ease-in-out;
       flex-direction: column;
   }
   .pluses h1{
-      font-size: 40px;
+      font-size: 55px;
       padding: 5px 0;
+      text-align: center;
   }
   .pluses {
     width: 90%;
   }
   .pluses p{
-      font-size: 12px;
+      font-size: 16px;
       padding: 0px 0px 10px;
+      width: 50%;
   }
 }
 
