@@ -1009,7 +1009,22 @@ transition: .3s ease-in-out;
   background-color: #7873fc23;
 
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 400px) {
+  .pluses h1{
+    font-size: 50px;
+    padding: 5px 0;
+    text-align: center;
+}
+.pluses {
+  width: 90%;
+}
+.pluses p{
+    font-size: 16px;
+    padding: 0px 0px 5px;
+    width: 90%;
+}
+}
+@media screen and (min-width: 401px) and (max-width: 700px) {
 .purple-line {
   background-color: #9370DB;
   height: 15px;
@@ -1288,9 +1303,9 @@ margin: 0 auto; /* Центрируем блок по горизонтали */
 
 .wrapper {
 max-width: 1200px;
-padding-top: 100px;
 margin: 0 auto; 
 position: relative;
+padding-top: 60px;
 }
 
 .wrapper i {
