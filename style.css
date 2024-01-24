@@ -521,14 +521,14 @@ visibility: visible;
 }
 
 .menu nav:hover a {
-  opacity: 0.25;
+  opacity: 1;
   transition: 0.3s;
   }
   .menu nav .dropbtn {
     opacity: 0.25;
     }
   .menu nav a:hover {
-  opacity: 1;
+  opacity: 0.25;
   transition: 0.3s;
   }
 .menu nav {
@@ -915,36 +915,48 @@ z-index: -1;
 /*---- pluses ----*/
 
 .pluses {
-  min-height: 22vh;
-  width: 100%;
-  background-image: radial-gradient(circle at center , #000000c4 5%, #1a002b 40%), url(images/mission2.jpg);
-  background-blend-mode: normal, multiply;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+min-height: 22vh;
+width: 100%;
+background-image: radial-gradient(circle at center , #000000c4 5%, #1a002b 40%), url(images/mission2.jpg);
+background-blend-mode: normal, multiply;
+background-position: center;
+background-size: cover;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
 }
+
 .pluses h1 {
-font-size: 70px;
+font-size: 36px;
 font-weight: 600;
 color: #fff;
-text-align: left; /* Выравнивание текста по левому краю */
-padding-left: 20px; /* Отступ слева */
 margin-bottom: 10px;
 }
+
 .pluses p {
 color: #c4c4c4;
-font-size: 18px;
+font-size: 16px;
 font-weight: 500;
 line-height: 22px;
-width: 40%;
 padding: 10px;
+}
+.purple-line {
+position: relative;
+width: 68%;
+height: 10px;
+overflow: hidden;
+}
+.purple-line::before,
+.purple-line::after {
+content: "";
+position: absolute;
+background-color: #8953ed;
+height: 100%;
+width: 100%;
 }
 /**course**/
 .course {
@@ -1009,22 +1021,7 @@ transition: .3s ease-in-out;
   background-color: #7873fc23;
 
 }
-@media screen and (max-width: 400px) {
-  .pluses h1{
-    font-size: 50px;
-    padding: 5px 0;
-    text-align: center;
-}
-.pluses {
-  width: 90%;
-}
-.pluses p{
-    font-size: 16px;
-    padding: 0px 0px 5px;
-    width: 90%;
-}
-}
-@media screen and (min-width: 401px) and (max-width: 700px) {
+@media (max-width: 700px) {
 .purple-line {
   background-color: #9370DB;
   height: 15px;
@@ -1038,17 +1035,15 @@ transition: .3s ease-in-out;
       flex-direction: column;
   }
   .pluses h1{
-      font-size: 55px;
+      font-size: 40px;
       padding: 5px 0;
-      text-align: center;
   }
   .pluses {
     width: 90%;
   }
   .pluses p{
-      font-size: 16px;
+      font-size: 12px;
       padding: 0px 0px 10px;
-      width: 50%;
   }
 }
 
@@ -1303,9 +1298,10 @@ margin: 0 auto; /* Центрируем блок по горизонтали */
 
 .wrapper {
 max-width: 1200px;
+padding-top: 100px;
 margin: 0 auto; 
 position: relative;
-padding-top: 60px;
+padding-bottom: 50px;
 }
 
 .wrapper i {
