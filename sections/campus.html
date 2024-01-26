@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>О школе AIS</title>
-        <meta property="og:title" content="О школе Akbobek International School" />
+        <title>Преподавательский состав международной школы AIS</title>
+        <meta property="og:title" content="Преподавательский состав международной школы AIS" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content=""/>
-        <meta property="og:description" content="Кто мы и что из себя представляем?"/>
+        <meta property="og:description" content="Ознакомьтесь с преподавательским составом международной школы AIS"/>
         <link rel="icon" type="image/png" href="../images/title.png">
-        <link rel="stylesheet" href="aboutstyle.css">
+        <link rel="stylesheet" href="campus.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -47,11 +47,10 @@
         </button>
         <div class="lang-dropdown-list">
           <a href="#" class="lang-dropdown-item">РУССКИЙ</a>
-          <a href="abouten.html" class="lang-dropdown-item">ENGLISH</a>
-          <a href="aboutkz.html" class="lang-dropdown-item">ҚАЗАҚША</a>
+          <a href="en.html" class="lang-dropdown-item">ENGLISH</a>
+          <a href="kz.html" class="lang-dropdown-item">ҚАЗАҚША</a>
         </div>
       </div>
-      <h1><span style="background-color: #804ae498">A</span>MBITIOUS<br><span style="background-color: #804ae498">I</span>NSPIRING<br><span style="background-color: #804ae498">S</span>TRONG</h1>
     </section>
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <div class="menu">
@@ -59,7 +58,7 @@
         <div class="dropdown">
           <button class="dropbtn" style="animation-delay: 0.1s">О нас <i class="fa-solid fa-chevron-right"></i></button>
           <div class="dropdown-content">
-            <a href="#">О AIS</a>
+            <a href="sections/about.html">О AIS</a>
             <a href="staffmain.html">Наша команда</a>
             <a href="#">О кампусе</a>
             <a href="#">Внутренняя инфраструктура</a>
@@ -129,104 +128,43 @@ $(document).click(function(){
 });
 </script>
 
-<!--About us-->
-
-  <div class="about-header">
-    <h1>Akbobek International School</h1>
+<div class="imgs">
+  <img
+    src="../images/img-1.png"
+    data-img
+    id="img-1"
+    class="top-section-img show"
+  />
+  <img src="../images/img-2.png" data-img id="img-2" />
+  <img src="../images/img-3.png" data-img id="img-3" />
+</div>
+<section class="top-section full-screen-section">
+  <div class="left">
+    <h1>The Future Starts Here.</h1>
+    <p>
+      The only platform that gives AI the ability to autonomously build web
+      services.
+    </p>
   </div>
-  <section class="about-us">
-  <div class="center-container">
-    <div class="about-col">
-      <h1>Школа Больших Возможностей</h1>
-      <p>Это уникальная школа предоставляющая детям от 0 до 11 класса возможность получить качественное международное образование в Казахстане. AIS обучение ведется по ведущим образовательным программам: <strong>госстандарт / сингапурская программа обучения</strong>.
-      <br>
-      <br>AIS стремится поддерживать стабильную, заботливую, поддерживающую семейную среду. Учащиеся получают постоянную поддержку от сообщества школы через ежедневное общение с преподавателями.</p>
-      <a href="" class="hero-btn">ПОДРОБНЕЕ</a>
-    </div>
-    <div class="about-col">
-      <img src="../images/aboutusdesc.jpg" alt="about-us">
-    </div>
-  </div>
+  <div class="right"></div>
 </section>
-
-<!--cards-->
-<div class="container">
-  <div class="card" id="firstcard" style="--clr: #543fb4">
-      <div class="img-box">
-          <img src="../assets/point.png">
-      </div>
-      <div class="content">
-          <h2>Наша цель</h2>
-          <p>
-              Воспитание глобальных граждан, готовых к
-              инновациям и изменениям, формируя будущее
-              нашего мира
-          </p>
-      </div>
-  </div>
-  <div class="card" id="secondcard" style="--clr: #543fb4">
-      <div class="img-box">
-          <img src="../assets/missionicon.png">
-      </div>
-      <div class="content">
-          <h2>Наша миссия</h2>
-          <p>
-              Мы формируем лидеров с широким мировоззрением
-              и глубоким национальным сознанием за
-              будущее государства
-          </p>
-      </div>
-  </div>
-  <div class="card" id="thirdcard" style="--clr: #543fb4">
-      <div class="img-box">
-          <img src="../assets/videnie.png">
-      </div>
-      <div class="content">
-          <h2>Наше виденье</h2>
-          <p>
-              Школа подготовки глобальных лидеров будущего,
-              любознательных и социально образованных граждан
-          </p>
-      </div>
-  </div>
-</div>
-
-<!--AIS IN NUMBERS-->
-<div class="num-header">
-  <h1>Мы в цифрах</h1>
-</div>
-<section class="numbers">
-<div class="containerr">
-  <h1 class="text" id="firstset">17,000<span>КВ МЕТРОВ</span></h1>
-  <h1 class="text" id="secondset">800<span>УЧЕНИКОВ</span></h1>
-  <h1 class="text" id="thirdset">130+<span>ПОБЕД В ОЛИМПИАДАХ</span></h1>
-  <h1 class="text" id="fourthset">6<span>СПОРТ-ЗАЛОВ</span></h1>
-  <h1 class="text" id="fiveset">30+<span>ДОП.НАПРАВЛЕНИЙ</span></h1>
-</div>
+<section class="full-screen-section first-main-section">
+  <h1>Completely Visual</h1>
+  <p>Never touch the command line, from provision to production.</p>
+  <div data-img-to-show="#img-1"></div>
 </section>
-
-<!--INTERACTIVE-->
-<section class="news-container no-resize">
-  <a href="staffmain.html" class="news-item">
-      <img src="../assets/cardss.png" alt="News 1">
-      <div class="news-content">
-          <h3>Преподавательский состав</h3>
-      </div>
-  </a>
-
-  <a href="campus.html" class="news-item">
-      <img src="../assets/cardss.png" alt="News 2">
-      <div class="news-content">
-          <h3>О кампусе</h3>
-      </div>
-  </a>
-
-  <a href="#" class="news-item">
-      <img src="../assets/cardss.png" alt="News 3">
-      <div class="news-content">
-          <h3>Внутренняя инфраструктура</h3>
-      </div>
-  </a>
+<section class="full-screen-section">
+  <h1>Full Stack</h1>
+  <p>
+    Never manage infrastructure again. One click gets you: a database, APIs,
+    deployments, hosting, etc.
+  </p>
+  <div data-img-to-show="#img-2"></div>
+</section>
+<section class="full-screen-section">
+  <h1>Launch Faster</h1>
+  <p>Logical can get systems to market in minutes instead of weeks.</p>
+  <div data-img-to-show="#img-3"></div>
 </section>
 
 <!-- Back to top button -->
@@ -265,7 +203,7 @@ $(document).click(function(){
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script src="about.js"></script>
+<script src="campus.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="../assets/language.js" defer></script>
