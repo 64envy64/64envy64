@@ -338,6 +338,7 @@ text-align: center;
 position: relative;
 overflow: hidden;
 color: #fff;
+background-attachment: fixed;
 }
 .sub-header h1 {
   font-size: 3vw;
