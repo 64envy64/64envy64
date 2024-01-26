@@ -546,17 +546,16 @@ visibility: visible;
 }
 
 .menu nav:hover a {
-opacity: 0.25;
-}
-.menu nav:hover .dropbtn {
-  opacity: 0.25;
-  }
-.menu nav .dropbtn:hover {
   opacity: 1;
+  transition: 0.3s;
   }
-.menu nav a:hover {
-opacity: 1;
-}
+  .menu nav .dropbtn {
+    opacity: 0.25;
+    }
+  .menu nav a:hover {
+  opacity: 0.25;
+  transition: 0.3s;
+  }
 .menu nav {
 display: flex;
 flex-direction: column;

@@ -439,14 +439,14 @@ visibility: visible;
 }
 
 .menu nav:hover a {
-  opacity: 0.25;
+  opacity: 1;
   transition: 0.3s;
   }
   .menu nav .dropbtn {
     opacity: 0.25;
     }
   .menu nav a:hover {
-  opacity: 1;
+  opacity: 0.25;
   transition: 0.3s;
   }
 .menu nav {
