@@ -284,6 +284,10 @@ opacity: 0;
   position: relative;
   overflow: hidden;
   color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sub-header h1 {

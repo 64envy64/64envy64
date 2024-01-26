@@ -337,7 +337,11 @@ background-size: cover;
 text-align: center;
 position: relative;
 overflow: hidden;
-color: #fff
+color: #fff;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .sub-header h1 {
   font-size: 3vw;
