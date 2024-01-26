@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   ScrollReveal().reveal('.about-header h1', { delay: 800, origin: 'top', distance: '20px', duration: 800 });
   ScrollReveal().reveal('.num-header h1', { delay: 700, origin: 'top', distance: '20px', duration: 800 });
-  ScrollReveal().reveal('#firstset', { delay: 300, origin: 'left', distance: '200px', duration: 800 });
+  ScrollReveal().reveal('#firstset', { delay: 300, origin: 'left', distance: '20px', duration: 800 });
   ScrollReveal().reveal('#secondset', { delay: 300, origin: 'top', distance: '20px', duration: 800 });
-  ScrollReveal().reveal('#thirdset', { delay: 350, origin: 'right', distance: '200px', duration: 800 });
-  ScrollReveal().reveal('#fourthset', { delay: 350, origin: 'right', distance: '200px', duration: 800 });
-  ScrollReveal().reveal('#fiveset', { delay: 350, origin: 'left', distance: '200px', duration: 800 });
+  ScrollReveal().reveal('#thirdset', { delay: 350, origin: 'right', distance: '20px', duration: 800 });
+  ScrollReveal().reveal('#fourthset', { delay: 350, origin: 'right', distance: '20px', duration: 800 });
+  ScrollReveal().reveal('#fiveset', { delay: 350, origin: 'left', distance: '20px', duration: 800 });
   ScrollReveal().reveal('#firstcard', { delay: 300, origin: 'left', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#secondcard', { delay: 150, origin: 'top', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#thirdcard', { delay: 300, origin: 'right', distance: '20px', duration: 800 });
