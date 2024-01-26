@@ -175,7 +175,7 @@ display: none;
 /* Дополнительные стили для мобильных устройств */
 @media (max-width: 1000px) {
 .phone {
-    margin-right: -90px;
+    margin-right: -65px;
 }
 .phone-number {
   display: none;
