@@ -284,6 +284,7 @@ opacity: 0;
   position: relative;
   overflow: hidden;
   color: #fff;
+  background-attachment: fixed;
 }
 
 .sub-header h1 {
