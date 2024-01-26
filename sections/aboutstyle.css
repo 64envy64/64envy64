@@ -306,6 +306,7 @@ opacity: 0;
     font-size: 14vw;
     width: 90%; /* Ширина заголовка на мобильных устройствах */
     padding-left: 1em; /* Отступ слева на мобильных устройствах */
+    background-attachment: scroll;
   }
 }
 .logo-container {

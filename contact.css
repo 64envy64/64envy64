@@ -339,9 +339,7 @@ position: relative;
 overflow: hidden;
 color: #fff;
 background-attachment: fixed;
-background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
 }
 .sub-header h1 {
   font-size: 3vw;
@@ -351,7 +349,8 @@ background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .sub-header h1 {
-    font-size: 5vw;
+    font-size: 9vw;
+    background-attachment: scroll;
   }
 }
 .logo-container {
@@ -460,7 +459,7 @@ display: grid;
 place-items: center;
 width: 88px;
 height: 150px;
-background-image: url("../assets/menu.svg");
+background-image: url("assets/menu.svg");
 background-repeat: no-repeat;
 filter: brightness(70%);
 background-position: center;
@@ -470,7 +469,7 @@ transition: filter 0.3s;
 filter: brightness(100%);
 }
 body.open .navbar-burger {
-background-image: url("../assets/close.svg");
+background-image: url("assets/close.svg");
 }
 .menu {
 z-index: 1200;
