@@ -30,14 +30,6 @@ function fadeOut(element, duration) {
   }, duration);
 }
 
-// Функция для плавного скрытия элемента
-function fadeOut(element, duration) {
-  element.style.transition = `opacity ${duration / 1000}s ease-out`;
-  element.style.opacity = 0;
-  setTimeout(() => {
-    element.style.display = 'none';
-  }, duration);
-}
 
 /*--TYPING EFF --*/
 const dynamicText = document.querySelector("h1 span");
@@ -146,8 +138,6 @@ document.addEventListener('DOMContentLoaded', function () {
     video.style.transform = `translateY(${translateY}px)`;
   });
 });
-
-
 // scrollReveal.js
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -158,9 +148,9 @@ document.addEventListener('DOMContentLoaded', function () {
   ScrollReveal().reveal('#thirdimg', { delay: 300, origin: 'right', distance: '20px', duration: 800 });
     ScrollReveal().reveal('.accordion-text .title', { delay: 300, origin: 'bottom', distance: '20px', duration: 800 });
     ScrollReveal().reveal('.partners h2', { delay: 300, origin: 'top', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#firstbox', { delay: 600, origin: 'right', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#secondbox', { delay: 600, origin: 'top', distance: '20px', duration: 800 });
-    ScrollReveal().reveal('#thirdbox', { delay: 600, origin: 'left', distance: '20px', duration: 800 });
+    ScrollReveal().reveal('#firstbox', { delay: 800, origin: 'right', distance: '25px', duration: 800 });
+    ScrollReveal().reveal('#secondbox', { delay: 800, origin: 'top', distance: '25px', duration: 800 });
+    ScrollReveal().reveal('#thirdbox', { delay: 800, origin: 'left', distance: '25px', duration: 800 });
     ScrollReveal().reveal('#firstcourse', { delay: 300, origin: 'left', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#secondcourse', { delay: 300, origin: 'bottom', distance: '20px', duration: 800 });
     ScrollReveal().reveal('#thirdcourse', { delay: 300, origin: 'right', distance: '20px', duration: 800 });

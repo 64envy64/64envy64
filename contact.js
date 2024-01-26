@@ -1,9 +1,24 @@
 /*-- PRELOADER --*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Simulate content loading delay (you can remove this in a real scenario)
-    setTimeout(function () {
-        document.body.classList.add("loaded");
-    }, 1500); // Change the delay time as needed
+  // Добавляем класс "loading" при начале загрузки
+  document.body.classList.add("loading");
+
+  // Создаем дополнительный div для блокировки скролла
+  const scrollBlocker = document.createElement('div');
+  scrollBlocker.classList.add('scroll-blocker');
+  document.body.appendChild(scrollBlocker);
+
+  // Симулируем задержку загрузки контента (удалим это в реальном сценарии)
+  setTimeout(function () {
+    // Удаляем класс "loading" при завершении загрузки
+    document.body.classList.remove("loading");
+
+    // Скрываем прелоадер плавно
+    fadeOut(document.querySelector('.preloader'), 500); // 
+
+    // Удаляем блокировщик скролла
+    document.body.removeChild(scrollBlocker);
+  }, 1000); //
 });
 
 /*-- BACKTOTOP --*/

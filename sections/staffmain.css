@@ -705,88 +705,75 @@ body.open .menu .dropbtn {
 .news-content h3 {
   margin: 0;
 }
-.staff {
+
+/*--profiles--*/
+.container {
+  margin: 20px 40px;
+  color: #181818;
+}
+.profiles {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
   text-align: center;
-}
-.card {
-  position: relative;
-  width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-  padding: 16px;
-  margin: 56px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  justify-content: space-around;
+  margin: 20px auto; /* Центрируем по горизонтали и добавляем отступы сверху и снизу */
+  max-width: 1700px; /* Ограничиваем максимальную ширину контейнера */
 }
 
-.card-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 5%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
-  0 5px 20px 0 rgba(0, 0, 0, 0.1);
+.profile {
+  flex-basis: calc(33.33% - 20px); /* Устанавливаем ширину элемента, с учетом отступов между элементами */
+  margin-bottom: 150px; /* Отступ между элементами внизу */
 }
-
-.card-image img {
-  width: 100%;
-  transform: scale(1.2);
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-
-.card p {
-  line-height: 22px;
+.user-name {
+  margin-top: 15px;
+  font-size: 30px;
+}
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
   letter-spacing: 0.5px;
-  margin-bottom: 12px;
+  color: #8d8d8d;
+}
+.profile p{
+  font-size: 16px;
+  margin-top: 25px;
   text-align: center;
 }
-.work {
-margin-bottom: 12px;
-font-weight: 700;
-color: #313131;
-position: relative;
-}
-.work::after {
-content: "";
-display: block;
-width: 50px; /* Регулируемая ширина линии */
-height: 2px; /* Высота линии */
-background-color: #6853c4; /* Цвет линии */
-margin: 0 auto; /* Регулируемые отступы для центрирования */
-margin-top: 8px; /* Регулируемый отступ сверху */
-}
-.name {
-  margin-top: 100px;
-  font-size: 1.4em;
-  color: #333;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  margin-bottom: 8px;
-  color: #8271cf;
-}
-@media (max-width: 1024px) {
-  .center-container {
-    flex-direction: column-reverse;
+@media only screen and (max-width: 1150px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .about-col {
-    width: 100%;
-    margin-right: 0; /* Remove right margin on mobile */
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 16px;
   }
-
-  .about-col img {
-    margin-left: 0; /* Reset margin for image on mobile */
+  .user-name {
+    font-size: 26px;
+  }
+  .profile h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .profiles {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+  .profile p {
+    margin: 20px 10px 40px 10px;
+  }
+  .profile .profile-img {
+    height: 300px;
+    width: 300px;
   }
 }
 /*---footer---*/
